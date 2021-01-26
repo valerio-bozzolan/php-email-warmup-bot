@@ -42,7 +42,7 @@ message( "started" );
 do {
 	try {
 
-		foreach( SMTPCredentialsCollector::all() as $credentials ) {
+		foreach( MailboxCredentialsCollector::all() as $credentials ) {
 
 			// imap connection
 			$spooler = new reyboz\IMAPSpooler(
